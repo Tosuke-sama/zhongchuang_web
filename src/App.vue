@@ -34,8 +34,8 @@
     <el-menu-item index="/login">管理与人才评测</el-menu-item>
     <el-menu-item index="/login">人才培养</el-menu-item>
     <el-menu-item index="/login">合作伙伴</el-menu-item>
-    <el-menu-item index="/login">联系我们</el-menu-item>
-    <el-menu-item index="/login">文化激励平台</el-menu-item>
+    <el-menu-item index="/login" class="menu">联系我们</el-menu-item>
+    <el-menu-item index="/login" class="menu">文化激励平台</el-menu-item>
   </el-menu>
   </div>
   
@@ -132,7 +132,8 @@ nav a.router-link-exact-active {
         background-image: url('@/assets/search.png');
         background-size:100% 100%;
     }
-.el-menu-demo{
+.el-menu-demo li{
+    padding-left: 1.5%;
     font-size: 18px;
     }
 </style>
