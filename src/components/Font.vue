@@ -5,7 +5,7 @@
 <script lang="ts">
 export default({
     name:"Font",
-    props:["TextBackground","TextFront"],
+    props:["TextBackground","TextFront","BgColor","FtColor"],
 })
 </script>
 <style>
@@ -22,5 +22,6 @@ export default({
     font-weight:bold;
     padding-top: 50px;
     padding-bottom: 20px;
+    position: relative;
 }
 </style>
