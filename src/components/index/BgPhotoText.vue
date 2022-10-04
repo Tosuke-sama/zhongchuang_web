@@ -42,7 +42,7 @@ export default({
 <style scoped>
 .PhotoBg{
     z-index:-10;
-    height: 600px;
+    height: 800px;
     width:100%;
 }
 .content1{
