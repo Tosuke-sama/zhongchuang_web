@@ -4,9 +4,9 @@
       <el-header style="height: auto;"><Header :imgURL="require('@/assets/imgheader.png')"/>   </el-header>
       <el-main>
         <Font :TextBackground="'BUSINSESS REVIEW'" :TextFront="'商业评论'"></Font>
-       <Content/>
+      <contentnew/>
        <div class="buttondiv">
-          <el-button size="large" class="buttonClass" color="#000000" :dark="isDark">More<el-icon><Right class="icon" color="#FFFFFF" size="10" /></el-icon></el-button>
+          <el-button size="large" class="buttonClass" color="#000000" :dark="isDark">More<el-icon class="icon"><Right style="height:100%;width:100%" color="#FFFFFF" size="10" /></el-icon></el-button>
        </div>
        <Font :TextBackground="'EXPEPT COLUMN'" :TextFront="'专家专栏'"></Font>
        <PhotoText></PhotoText>
@@ -36,10 +36,9 @@
 </template>
 <script lang="ts">
 import Header from'@/components/Header.vue'
-import content from'@/components/index/content.vue'
+import contentnew from'@/components/index/ContentNew.vue'
 import Font from'@/components/Font.vue'
 import { defineComponent, reactive } from 'vue';
-import Content from '@/components/index/content.vue';
 import PhotoText from '../components/PhotoText.vue';
 import BgPhotoText from '@/components/index/BgPhotoText.vue';
 import TrainText from '@/components/index/TrainText.vue';
@@ -53,18 +52,18 @@ export default{
     },
     components:{
     Header,
-    content,
-    Content,
     Font,
     PhotoText,
     BgPhotoText,
     TrainText,
-    Carousel
+    Carousel,
+    contentnew
 }
 }
 </script>
 <style scoped>
-.body{
+@media(min-width: 768px){
+  .body{
   margin:0px;
   width: 100%;
   padding: 0px;
@@ -88,8 +87,8 @@ export default{
   padding-bottom: 30px;
 }
 .icon{
-  width:10px;
-  height:10px;
+  width:20px;
+  height:20px;
 }
 .footer{
   height: 150px;
@@ -108,5 +107,53 @@ export default{
   color: #aaaaaa;
   width: 40%;
   margin: auto;
+}
+}
+@media(max-width: 768px){
+  .body{
+  margin:0px;
+  width: 100%;
+  padding: 0px;
+}
+.el-header {
+  --el-header-padding: 0 0px;
+}
+.el-main{
+  padding:0px;
+}
+.buttonClass {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 30%;
+  height: 50px;
+  padding: 0;
+  font-size: 20px;
+}
+.buttondiv{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.icon{
+  width:20px;
+  height:20px;
+}
+.footer{
+  height: 150px;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.786);
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+}
+.footernum{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.qrcode{
+  color: #aaaaaa;
+  width: 40%;
+  margin: auto;
+}
 }
 </style>
