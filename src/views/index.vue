@@ -21,14 +21,11 @@
       </el-main>
       <el-footer class="footer">
         <div class="footernum">
-          <div style="
-          font-size:23px;
-          text-align: left;margin-top: 3.5%;margin-left: 25%;
-          ">404-8820-5560 &nbsp;&nbsp;&nbsp;四川省成都市高新区二层108号</div>
-          <div style="color: #aaaaaa;; font-size:20px;text-align: left;margin-left: 25%;margin-top: 1%;">Copyright © 2004-2007 |a.com 版权所有|咨询有风险，投资需谨慎 </div>
+          <div class="foottitle">404-8820-5560 &nbsp;&nbsp;&nbsp;四川省成都市高新区二层108号</div>
+          <div class="footread">Copyright © 2004-2007 |a.com 版权所有|咨询有风险，投资需谨慎 </div>
         </div>
-        <div class="qrcode">
-          <img src="@/assets/QRcode.png" alt="" style="height:60%;width: 11%;">
+        <div class="qrcodebox">
+          <img src="@/assets/QRcode.png" class="qrcode" alt="" >
         </div>
       </el-footer>
     </el-container>
@@ -98,19 +95,37 @@ export default{
   flex-direction: row;
   color: #ffffff;
 }
+
 .footernum{
   width: 60%;
   display: flex;
   flex-direction: column;
 }
-.qrcode{
+.foottitle{
+  font-size:23px;
+  text-align: left;
+  margin-top: 3.5%;
+  margin-left: 25%;      
+}
+.footread{
+    color: #aaaaaa; 
+    font-size: 20px;
+    text-align: left;
+    margin-left: 25%;
+    margin-top: 1%;
+}
+.qrcodebox{
   color: #aaaaaa;
   width: 40%;
   margin: auto;
 }
+.qrcode{
+  height:60%;
+  width: 11%;
+}
 }
 @media(max-width: 768px){
-  .body{
+.body{
   margin:0px;
   width: 100%;
   padding: 0px;
@@ -138,7 +153,7 @@ export default{
   height:20px;
 }
 .footer{
-  height: 150px;
+  height: 100px;
   padding: 0;
   background-color: rgba(0, 0, 0, 0.786);
   display: flex;
@@ -146,14 +161,34 @@ export default{
   color: #ffffff;
 }
 .footernum{
-  width: 60%;
+  width: 75%;
   display: flex;
   flex-direction: column;
 }
-.qrcode{
+.foottitle{
+  font-size:13px;
+  text-align: left;
+  margin-top: 9%;
+  margin-left: 5%;      
+}
+.footread{
+    color: #aaaaaa; 
+    font-size: 10px;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.qrcodebox{
+  height: 75%;
   color: #aaaaaa;
-  width: 40%;
+  width: 20%;
   margin: auto;
+  padding-right:5px ;
+}
+.qrcode{
+  height:100%;
+  width: 100%;
+
 }
 }
 </style>

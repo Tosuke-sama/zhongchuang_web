@@ -163,8 +163,9 @@ nav a.router-link-exact-active {
         }
       #nav1{
           height: 5vh;
-          background-color: #42b983;
+          background-color: #ffffff;
           text-align: right;
+          border: 0.5px solid;
         }
       .header {
           height: 85px;

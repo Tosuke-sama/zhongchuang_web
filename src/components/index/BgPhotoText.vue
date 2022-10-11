@@ -3,7 +3,7 @@
          <!-- <Font :TextBackground="'IMFORMATION'" :TextFront="'研究报告'" id="fontBg" style="color:#FFFFFF;"></Font> -->
         <div class="bg1">{{TextBackground}}</div>
         <div class="ft1">{{TextFront}}</div>
-        <div style="color:#FFFFFF">《新泽没有夏天》是李京介“时间、世界与冒险”系列的第一卷，讲述了少年叶瑾介与步行在未来的少女、时间鸟、以及</div>
+        <div class="text1" style="color:#FFFFFF">《新泽没有夏天》是李京介“时间、世界与冒险”系列的第一卷，讲述了少年叶瑾介与步行在未来的少女、时间鸟、以及</div>
         <div class="content1" style="z-index:10;" >
             <div class='wrap'>
             <a href="">为了挽回世界线的变动，叶瑾介决定让自己分裂......<el-icon><Right class="icon" color="#000000" size="3" /></el-icon></a>
@@ -40,7 +40,8 @@ export default({
 })
 </script>
 <style scoped>
-.PhotoBg{
+@media(min-width: 768px){
+    .PhotoBg{
     z-index:-10;
     height: 800px;
     width:100%;
@@ -83,6 +84,56 @@ export default({
     padding-bottom: 20px;
     color: #ffffff;
     z-index: 10;
+}
+}
+
+@media(max-width: 768px){
+    .PhotoBg{
+    z-index:-10;
+    height: 800px;
+    width:100%;
+}
+.content1{
+    height: 70%;
+    width: 90%;
+    margin: 1% auto;
+    background-color: #ffffff;
+}
+.wrap{
+    height: 65%;
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.text1{
+  padding-bottom:20px;
+  margin: auto 3%;
+}
+.wrap a{
+    width: 40%;
+    display:block;
+    margin:auto;
+    color: #000000;
+}
+    .bg1{
+    font-size:40px;
+    position:absolute;
+    opacity:0.8;
+    left:0;right:0;margin:0 auto;
+    font-weight:bold;
+    padding-top:20px;
+    color: #000000;
+}
+.ft1{
+    font-size: 40px; 
+    font-weight:bold;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    color: #ffffff;
+}
 }
 
 </style>
