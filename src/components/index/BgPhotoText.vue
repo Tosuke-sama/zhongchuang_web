@@ -85,6 +85,11 @@ export default({
     color: #ffffff;
     z-index: 10;
 }
+.buttonClass{
+    height: 60px;
+    width: 250px;
+    font-size: 20px;
+}
 }
 
 @media(max-width: 768px){
@@ -133,6 +138,11 @@ export default({
     padding-bottom: 30px;
     position: relative;
     color: #ffffff;
+}
+.buttonClass{
+    width: 30%;
+    height: 50px;
+    font-size: 20px;
 }
 }
 

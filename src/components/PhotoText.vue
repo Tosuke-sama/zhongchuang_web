@@ -39,12 +39,12 @@ export default({
         height: 100%;
     }
     .titlept{
-        font-size:2rem;
+        font-size:1.5rem;
         padding-bottom: 10%;
         font-weight: bold;
     }
     .textpt{
-        font-size:1.5rem
+        font-size:1.2rem
     }
   }
   @media(max-width: 768px){

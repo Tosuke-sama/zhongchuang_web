@@ -52,9 +52,7 @@
 天所做的事情。例如，我们公司五年前就没
 有一半以上的客户工作..刷新包括更新的图形元素，新字体,新的调
 色板以及数据可视化和摄影的改进方法。蓝
-色仍然突出，象征着我们的使命和价值观的
-不变。只是现在它是一个更深的阴影设置在
-白色背景下。
+
 `
     }
   },
@@ -106,15 +104,15 @@
             box-shadow: 0 0 8px 3px #999  ;
         }
         .title{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight:bold;
             text-indent:2em;
             margin-right:1rem ;
             margin-left:1rem ;
         }
         .textbox{
-            font-size: 1.3rem;
-            text-indent:3em;
+            font-size: 1.1rem;
+            text-indent:2em;
             margin-right:1rem ;
             margin-left:1rem ;
             color: rgb(135, 135, 135);

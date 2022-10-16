@@ -77,7 +77,7 @@
 }
 @media(max-width: 768px){
 .main{
-    height: 55vh;
+    height: 500px;
     width:100%;
     background-color: rgb(236, 236, 236);
 }
